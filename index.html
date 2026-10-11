@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniela Márquez | Portafolio</title>
+
+  <!-- Fuentes de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Fredoka:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== MENÚ ========== -->
+  <header class="menu">
+    <a href="#inicio" class="logo">D-signit</a>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#formacion">Formación</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#idiomas">Idiomas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== INICIO ========== -->
+    <section id="inicio" class="hero">
+      <!-- Los detalles decorativos (estrellas) los coloca script.js -->
+
+      <div class="hero-texto">
+        <p class="etiqueta">Portafolio 2026</p>
+        <h1>Daniela Márquez</h1>
+        <h2>Estudiante de Diseño</h2>
+        <p>
+          Me gusta convertir ideas en cosas que se pueden tocar:
+          logotipos, tazas, playeras y todo lo que lleve un poquito de color.
+        </p>
+        <!-- Botón con JavaScript: cambia el color principal de la página -->
+        <button id="btnColor" class="boton" type="button">🎨 Cambiar color</button>
+      </div>
+
+      <!-- Avatar ilustrado: se asoma desde la esquina de la portada -->
+      <div class="hero-foto">
+        <img src="img/avatar.png" alt="Ilustración de Daniela">
+      </div>
+    </section>
+
+    <!-- ========== SOBRE MÍ (datos personales) ========== -->
+    <section id="sobre-mi" class="seccion aparecer">
+      <h2>Sobre mí</h2>
+      <div class="dos-columnas">
+        <div>
+          <p>
+            Soy Daniela Márquez, estudiante de Diseño. Llevo <strong>3 años</strong>
+            trabajando en una empresa de personalización de productos, donde aprendí
+            a pasar un diseño de la pantalla al producto final.
+          </p>
+          <p>
+            Mi estilo es minimalista y colorido: me gustan las formas simples,
+            los colores que se notan y los detalles que hacen que algo se sienta único.
+          </p>
+          <!-- Botón que revela información oculta -->
+          <button id="btnDato" class="boton boton-claro" type="button">✨ Dato curioso</button>
+          <p id="datoCurioso" class="dato oculto">
+            Me encanta ver cómo un diseño que empezó como un boceto termina en una taza o una playera de verdad.
+          </p>
+        </div>
+        <ul class="datos">
+          <li><span>Carrera</span> Diseño</li>
+          <li><span>Experiencia</span> 3 años en personalización de productos</li>
+          <li><span>Estilo</span> Minimalista y colorido</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== FORMACIÓN ========== -->
+    <section id="formacion" class="seccion aparecer">
+      <h2>Formación académica</h2>
+      <div class="formacion-grid">
+        <div class="linea-tiempo">
+          <div class="hito">
+            <span class="punto"></span>
+            <h3>Licenciatura en Diseño</h3>
+            <p>Universidad · 2024 – Actualidad</p>
+          </div>
+          <div class="hito">
+            <span class="punto"></span>
+            <h3>Experiencia en personalización de productos</h3>
+            <p>3 años de trabajo con vinil, sublimación y DTF</p>
+          </div>
+        </div>
+
+        <!-- Ilustraciones de las técnicas, a un lado de la información -->
+        <div class="tecnicas">
+          <img class="tec-sublimacion" src="img/sublimacion.png" alt="Prensa para sublimar tazas">
+          <img class="tec-vinil" src="img/vinil.png" alt="Plotter de corte para vinil">
+          <img class="tec-dtf" src="img/dtf.png" alt="Impresora y horno para DTF">
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HABILIDADES ========== -->
+    <section id="habilidades" class="seccion aparecer">
+      <h2>Habilidades</h2>
+      <div class="dos-columnas">
+        <div>
+          <h3>Lo que sé hacer</h3>
+          <ul class="chips">
+            <li>Diseño gráfico</li>
+            <li>Creación de logotipos</li>
+            <li>Personalización con vinil</li>
+            <li>Sublimación</li>
+            <li>DTF</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Herramientas</h3>
+          <ul class="chips chips-lila">
+            <li>Illustrator</li>
+            <li>Photoshop</li>
+            <li>Premiere Pro</li>
+            <li>Silhouette Studio</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROYECTOS ========== -->
+    <section id="proyectos" class="seccion aparecer">
+      <h2>Proyectos</h2>
+
+      <!-- Logotipos -->
+      <article class="bloque">
+        <h3>Logotipos</h3>
+        <p>Diseño de logotipos simples y fáciles de recordar para marcas pequeñas.</p>
+        <div class="logos">
+          <img src="img/logotipo-1.png" alt="Logotipo 1">
+          <img src="img/logotipo-2.png" alt="Logotipo 2">
+        </div>
+      </article>
+
+      <!-- Personalización: las 4 imágenes en un solo bloque, una al lado de la otra -->
+      <article class="bloque">
+        <h3>Personalización para marcas</h3>
+        <p>
+          Proyectos de merchandising para marcas como Fresa Salvaje y Señorita Caruso,
+          ambas de grupo OCHO.30, y para el podcast "Me vale madres".
+        </p>
+        <div class="tira">
+          <img src="img/proyecto-1.jpg" alt="Merchandising del podcast Me vale madres: sudadera, gorra, tote bag, fundas y termo">
+          <img src="img/proyecto-2.jpg" alt="Playera blanca con el logotipo de Fresa Salvaje">
+          <img src="img/proyecto-3.jpg" alt="Playera blanca con la fresa ilustrada de Fresa Salvaje">
+          <img src="img/proyecto-4.jpg" alt="Playera blanca con la frase Dulce sí, sumisa nunca, bebé">
+        </div>
+      </article>
+    </section>
+
+    <!-- ========== IDIOMAS ========== -->
+    <section id="idiomas" class="seccion aparecer">
+      <h2>Idiomas</h2>
+      <ol class="idiomas">
+        <li><strong>Español</strong> <span>Nativo</span></li>
+        <li><strong>Inglés</strong> <span>Avanzado</span></li>
+        <li><strong>Alemán</strong> <span>Básico</span></li>
+      </ol>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section id="contacto" class="seccion aparecer contacto">
+      <h2>Contacto</h2>
+      <p>¿Tienes una idea? Contáctame.</p>
+      <ul class="contacto-lista">
+        <li>
+          <img class="icono-gmail" src="img/gmail.png" alt="Gmail">
+          <a href="mailto:dmarquezsalinas@gmail.com">dmarquezsalinas@gmail.com</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© <span id="anio"></span> Daniela Márquez · Hecho con HTML, CSS y JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
